@@ -2,6 +2,7 @@ package lnmiit.android.app.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -10,12 +11,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import lnmiit.android.app.R;
+import lnmiit.android.app.fragment.Student;
+
 /* Created by Chanpreet
    on 11 August 2016
  */
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+     FragmentManager fragmentManager = getSupportFragmentManager();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,6 +68,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.administration) {
         } else if (id == R.id.faculty) {
         } else if (id == R.id.student) {
+            fragmentManager.beginTransaction().replace(R.id.fragment,new Student()).addToBackStack("").commit();
         } else if (id == R.id.emergency) {
         } else if (id == R.id.bus) {
         } else if (id == R.id.map) {
