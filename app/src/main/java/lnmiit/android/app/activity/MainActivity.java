@@ -2,6 +2,9 @@ package lnmiit.android.app.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -10,6 +13,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import lnmiit.android.app.R;
+import lnmiit.android.app.fragment.AcademicsFragment;
+
 /* Created by Chanpreet
    on 11 August 2016
  */
@@ -58,8 +63,12 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+
+        Fragment fragment = null;
         int id = item.getItemId();
         if (id == R.id.academics) {
+            fragment = new AcademicsFragment();
+            getSupportActionBar().setTitle("Academics");
         } else if (id == R.id.admission) {
         } else if (id == R.id.placement) {
         } else if (id == R.id.administration) {
@@ -71,6 +80,13 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.dining) {
         } else if (id == R.id.gallery) {
         } else if (id == R.id.about) {
+        }
+
+        if (fragment != null) {
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.fragment, fragment);
+            fragmentTransaction.commit();
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

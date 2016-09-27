@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/layout_bg"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/global_margin"
+            android:padding="@dimen/global_padding">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/cardplus"
+                android:layout_marginBottom="@dimen/global_margin"
+                >
+
+                <TextView
+                    android:id="@+id/intro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Introduction"
+                    android:textSize="@dimen/head_text"
+                    android:textColor="#FF0000"
+                    android:padding="@dimen/global_padding"
+                    android:layout_marginLeft="@dimen/margin_left_right"
+                    android:layout_marginRight="@dimen/margin_left_right"
+                    />
+                <TextView
+                    android:id="@+id/intro_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right"
+                    android:layout_marginRight="@dimen/margin_left_right"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:paddingLeft="@dimen/padding_left"
+                    android:text="@string/intro_ug"
+                    android:paddingBottom="@dimen/padding_bottom"
+                    android:textSize="@dimen/norml_text"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/cardplus"
+                android:layout_marginBottom="@dimen/global_margin"
+                >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/b_cse"
+                    android:text="Computer Science and Engineering"
+                    android:textStyle="italic"
+                    android:background="@drawable/button_background"
+                    android:textSize="@dimen/head_text"/>
+
+
+                <TextView
+                    android:id="@+id/about_cse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right"
+                    android:layout_marginRight="@dimen/margin_left_right"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:paddingBottom="@dimen/padding_bottom"
+                    android:textSize="@dimen/norml_text"
+                    android:text="@string/ug_cse"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/cardplus"
+                android:layout_marginBottom="@dimen/global_margin"
+                >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/b_ece"
+                    android:text="Electronics and Comuunication Engineering"
+                    android:textStyle="italic"
+                    android:background="@drawable/button_background"
+                    android:textSize="@dimen/head_text"/>
+
+
+
+                <TextView
+                    android:id="@+id/about_ece"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right"
+                    android:layout_marginRight="@dimen/margin_left_right"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:paddingBottom="@dimen/padding_bottom"
+                    android:text="@string/ug_ece"
+                    android:textSize="@dimen/norml_text"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/cardplus"
+                android:layout_marginBottom="@dimen/global_margin"  >
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Computer and Communication Engineering"
+                    android:textStyle="italic"
+                    android:background="@drawable/button_background"
+                    android:textSize="@dimen/head_text"
+                    android:id="@+id/b_cce"/>
+
+                <TextView
+                    android:id="@+id/about_cce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right"
+                    android:layout_marginRight="@dimen/margin_left_right"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:paddingBottom="@dimen/padding_bottom"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/norml_text"
+                    android:text="@string/ug_cce"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/cardplus"
+                android:layout_marginBottom="@dimen/global_margin"  >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mechatronics Engineering"
+                    android:textStyle="italic"
+                    android:background="@drawable/button_background"
+                    android:textSize="@dimen/head_text"
+                    android:id="@+id/b_mme"/>
+
+
+                <TextView
+                    android:id="@+id/about_mech"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right"
+                    android:layout_marginRight="@dimen/margin_left_right"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:paddingBottom="@dimen/padding_bottom"
+                    android:text="@string/ug_mme"
+                    android:textSize="@dimen/norml_text"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/cardplus"
+                android:layout_marginBottom="@dimen/global_margin"  >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mechanical Engineering"
+                    android:textStyle="italic"
+                    android:background="@drawable/button_background"
+                    android:textSize="@dimen/head_text"
+                    android:id="@+id/b_me"/>
+
+
+
+                <TextView
+                    android:id="@+id/about_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right"
+                    android:layout_marginRight="@dimen/margin_left_right"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:paddingBottom="@dimen/padding_bottom"
+                    android:text="@string/ug_me"
+                    android:textSize="@dimen/norml_text"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
