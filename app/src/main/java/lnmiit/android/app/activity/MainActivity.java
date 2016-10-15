@@ -15,6 +15,7 @@ import android.view.MenuItem;
 
 import lnmiit.android.app.R;
 import lnmiit.android.app.fragment.FacultyFragment;
+import lnmiit.android.app.fragment.Student;
 
 /* Created by Chanpreet
    on 11 August 2016
@@ -76,7 +77,10 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.administration) {
         } else if (id == R.id.faculty) {
             fragment = new FacultyFragment();
+            getSupportActionBar().setTitle("Faculty");
         } else if (id == R.id.student) {
+            fragment = new Student();
+            getSupportActionBar().setTitle("Student");
         } else if (id == R.id.emergency) {
         } else if (id == R.id.bus) {
         } else if (id == R.id.map) {
