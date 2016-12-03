@@ -27,12 +27,12 @@
                 android:id="@+id/program"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_left_right"
-                android:layout_marginRight="@dimen/margin_left_right"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:gravity="left"
                 android:padding="@dimen/global_padding"
                 android:text="Programs Offered"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color_primary"
                 android:textSize="22sp" />
 
             <TextView
@@ -40,8 +40,8 @@
                 android:layout_height="0.5sp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="5dp"
-                android:layout_marginLeft="@dimen/margin_left_right"
-                android:layout_marginRight="@dimen/margin_left_right"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:background="@color/divider_white" />
 
             <TextView
@@ -53,7 +53,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:paddingTop="@dimen/padding_top"
                 android:text="Master of Technology(M.Tech)"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color_primary"
                 android:textSize="18sp" />
 
             <TextView
@@ -65,7 +65,13 @@
                 android:layout_marginRight="@dimen/margin_left_right"
                 android:layout_marginTop="@dimen/margin_top"
                 android:paddingBottom="@dimen/padding_bottom"
-                android:text="@string/mtechfields"
+                android:text="
+•Computer Science and Engineering\n
+•Computer Science and Engineering with specialization in Software Engineering\n
+•Computer Science and Engineering with specialization in Data Analytics\n
+•Electronics and Communication Engineering\n
+•Electronics and Communication Engineering with Specialization in Mobile Communication
+        "
                 android:textSize="@dimen/norml_text"
                 android:textColor="@color/text_color_secondary"/>
 
@@ -78,7 +84,7 @@
                 android:layout_marginRight="@dimen/margin_left_right"
                 android:paddingTop="@dimen/padding_top"
                 android:text="Master Of Science"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color_primary"
                 android:textSize="18sp" />
 
             <TextView
@@ -90,7 +96,11 @@
                 android:layout_marginRight="@dimen/margin_left_right"
                 android:layout_marginTop="@dimen/margin_top"
                 android:paddingBottom="@dimen/padding_bottom"
-                android:text="@string/msfields"
+                android:text="
+•Computer Science and Engineering\n
+•Electronic and Communication Engineering\n
+•Communication and Computer Engineering
+        "
                 android:textColor="@color/text_color_secondary"
                 android:textSize="@dimen/norml_text" />
 
@@ -103,7 +113,7 @@
                 android:layout_marginRight="@dimen/margin_left_right"
                 android:paddingTop="@dimen/padding_top"
                 android:text="Doctors of Philosophy(Ph.D)"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color_primary"
                 android:textSize="18sp" />
 
             <TextView
@@ -115,7 +125,13 @@
                 android:layout_marginRight="@dimen/margin_left_right"
                 android:layout_marginTop="@dimen/margin_top"
                 android:paddingBottom="@dimen/padding_bottom"
-                android:text="@string/phdFields"
+                android:text="
+•Computer Science and Engineering\n
+•Electronics and Communications Engineering\n
+•Physics\n
+•Mathematics\n
+•Humanities and Social Sciences
+        "
                 android:textColor="@color/text_color_secondary"
                 android:textSize="@dimen/norml_text" />
 
@@ -138,12 +154,12 @@
                 android:id="@+id/eligibility"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_left_right"
-                android:layout_marginRight="@dimen/margin_left_right"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:gravity="left"
                 android:padding="@dimen/global_padding"
                 android:text="Eligibility"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color_primary"
                 android:textSize="22sp" />
 
             <TextView
@@ -151,8 +167,8 @@
                 android:layout_height="0.5sp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="5dp"
-                android:layout_marginLeft="@dimen/margin_left_right"
-                android:layout_marginRight="@dimen/margin_left_right"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:background="@color/divider_white" />
 
             <TextView
@@ -163,7 +179,7 @@
                 android:layout_marginRight="@dimen/margin_left_right"
                 android:paddingTop="@dimen/padding_top"
                 android:text="For Engineering,Physics,and Mathematics Disciplines"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color_primary"
                 android:textSize="18sp" />
 
             <TextView
@@ -188,7 +204,7 @@
                 android:layout_marginRight="@dimen/margin_left_right"
                 android:paddingTop="@dimen/padding_top"
                 android:text="For Humanities and Social Science"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color_primary"
                 android:textSize="18sp" />
 
             <TextView
@@ -223,12 +239,12 @@
                 android:id="@+id/contact_us"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_left_right"
-                android:layout_marginRight="@dimen/margin_left_right"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:gravity="left"
                 android:padding="@dimen/global_padding"
                 android:text="Contact Us"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/text_color_primary"
                 android:textSize="22sp" />
 
             <TextView
@@ -236,8 +252,8 @@
                 android:layout_height="0.5sp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="5dp"
-                android:layout_marginLeft="@dimen/margin_left_right"
-                android:layout_marginRight="@dimen/margin_left_right"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:background="@color/divider_white" />
 
             <TextView
