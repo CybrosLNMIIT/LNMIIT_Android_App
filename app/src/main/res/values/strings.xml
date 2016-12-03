@@ -494,25 +494,9 @@ We understand that adjusting to a new environment away from home will take some 
         <item>Sports</item>
     </string-array>
     <string-array name="description">
-        <item>  We the science and technology council of LNMIIT are the backbone of our university.The phoenix club organizes various events in the field of robotics. The cybros provides training inthe field of networking,programming and conductsvarious programming contests. The literary committee that is considered to be the most elite groupof our institution, helps in enhancing the intellectual perspectiveof our students. With lots of literary events organized round the year, the students are exposed to the important skills of group discussions, debate, communication etc. The quiz club, which is by far the mostsuccesful club of the institution is one of the most popular quizzing body in northern India.The E-cell aims at developing an entrepreneurial spirit amongst the students.</item>
-        <item>
-            The Cultural Council manages a plethora of events, workshops and club activities throughout the year.
-                 Its main objectives are to provide the students with an exposure and a platform to learn, enjoy and sho
-                 wcase their talents in the fields of Dance, Music, Arts, Social Initiative Programs, Health Awareness Programs, Cl
-                 eanliness and Donation Drives for the poor and the needy. Cultural events like the Dan
-                 ce Premier League, Gusto-X (Dandiya night), and Rubaroo (Fresher party) are organised by the Cultura
-                 l Council with the help of clubs like dance club, drama club, music club, art n craft club, nukkad mandali, fashion clu
-                 b, movie club, photography club, and Sankalp club.
-        </item>
-        <item>   The Sports Council is placed among elite in the echelon of various councils in the Institute.
-                 We help provide students the arena to exhibit the sports dexterity present in us. The Sports Council nurtures
-                 talent by organizing various events, camps and coaching to help polish the diamond in you, from Karate Classes
-                  to Chess Tournaments to Yoga Sessions to Track Events, we leave no stone unturned in catering to the desires of
-                   the students. We take immense pride in Organizing the annual College Sports Festival Desportivos where students
-                   from various colleges converge for a carnival of their life. Annual Sports Day is also organized alongside, many
-                    sport specific tournaments like Badminton Premiere League, Football Premiere League and Basketball League which
-                    are held Intra-College so as provide students maximum exposure to sports. It is our endeavor to see LNMIIT in
-                    the pantheon of sports giants and make a name to reckon with in the arena of sports.</item>
+        <item>We the science and technology council of LNMIIT are the backbone of our university.The phoenix club organizes various events in the field of robotics. The Cybros provides training in the field of networking, programming and conducts various programming contests. The literary committee that is considered to be the most elite group of our institution, helps in enhancing the intellectual perspective of our students. With lots of literary events organized round the year, the students are exposed to the important skills of group discussions, debate, communication etc. The quiz club, which is by far the most succesful club of the institution is one of the most popular quizzing body in northern India.The E-cell aims at developing an entrepreneurial spirit amongst the students.</item>
+        <item>The Cultural Council manages a plethora of events, workshops and club activities throughout the year.Its main objectives are to provide the students with an exposure and a platform to learn, enjoy and showcase their talents in the fields of Dance, Music, Arts, Social Initiative Programs, Health Awareness Programs, Cleanliness and Donation Drives for the poor and the needy. Cultural events like the Dance Premier League, Gusto-X (Dandiya night), and Rubaroo (Fresher party) are organised by the Cultural Council with the help of clubs like dance club, drama club, music club, art n craft club, nukkad mandali, fashion club, movie club, photography club, and Sankalp club.</item>
+        <item>The Sports Council is placed among elite in the echelon of various councils in the Institute.We help provide students the arena to exhibit the sports dexterity present in us. The Sports Council nurtures talent by organizing various events, camps and coaching to help polish the diamond in you, from Karate Classes to Chess Tournaments to Yoga Sessions to Track Events, we leave no stone unturned in catering to the desires of the students. We take immense pride in Organizing the annual College Sports Festival Desportivos where students from various colleges converge for a carnival of their life. Annual Sports Day is also organized alongside, many sport specific tournaments like Badminton Premiere League, Football Premiere League and Basketball League whichare held Intra-College so as provide students maximum exposure to sports. It is our endeavor to see LNMIIT inthe pantheon of sports giants and make a name to reckon with in the arena of sports.</item>
     </string-array>
     <string-array name="fest_name">
         <item>Vivacity</item>
@@ -678,5 +662,49 @@ The Institute is currently running the following Four Year B.Tech Programmes:-</
         <item>01415191757</item>
         <item></item>
         <item>01415189211</item>
+    </string-array>
+    <string-array name="cont_url">
+        <item> </item>
+        <item>http://bit.ly/2g2Cgfa</item>
+        <item>http://bit.ly/2fqpOSQ</item>
+        <item>http://bit.ly/2eZjYas </item>
+        <item>http://bit.ly/2fiKFtO </item>
+    </string-array>
+
+    <string-array name="cont_title">
+
+        <item>Training &amp; Placement Officer</item>
+        <item>Faculty Advisor</item>
+        <item>Faculty Advisor</item>
+        <item>Student Co-ordinator</item>
+        <item>Student Co-ordinator</item>
+
+    </string-array>
+
+    <string-array name="cont_name">
+
+        <item>MR. MANUJ SHARMA</item>
+        <item>DR. PREETY SINGH</item>
+        <item>MR. SANDEEP SAINI</item>
+        <item>TUSHAR AGARWAL</item>
+        <item>SAURABH KAYAL</item>
+    </string-array>
+
+    <string-array name="cont_email">
+        <item>top@lnmiit.ac.in</item>
+        <item>prtysingh@gmail.com</item>
+        <item>sandeep.saini@lnmiit.ac.in</item>
+        <item>Tusharlnmiit94@gmail.com</item>
+        <item>saurabhkayal007@gmail.com</item>
+
+    </string-array>
+
+    <string-array name="cont_number">
+        <item>+918696792550</item>
+        <item>+919828364396</item>
+        <item>+919983180460</item>
+        <item>+919414061624</item>
+        <item>+919024699141</item>
+        <item>+919680613840</item>
     </string-array>
 </resources>

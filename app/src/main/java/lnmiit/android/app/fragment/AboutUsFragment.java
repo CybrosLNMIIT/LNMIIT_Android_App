@@ -30,13 +30,12 @@ public class AboutUsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_faculty, container, false);
         viewPager = (ViewPager) view.findViewById(R.id.viewpager1);
         setupViewPager(viewPager);
-
-        tabLayout = ((MainActivity)getActivity()).getTabLayout();
+        tabLayout = ((MainActivity) getActivity()).getTabLayout();
         tabLayout.removeAllTabs();
         tabLayout.setupWithViewPager(viewPager);
-        tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
-        return view ;
+        return view;
     }
+
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getActivity().getSupportFragmentManager());
         adapter.addFrag(new DirectorFragment(), "Director");

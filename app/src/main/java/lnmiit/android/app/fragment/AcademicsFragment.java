@@ -40,7 +40,7 @@ public class AcademicsFragment extends Fragment {
         StudentAdapter studentadapter = new StudentAdapter(getChildFragmentManager());
         studentadapter.addFragment(new AcademicsUG(),"UG");
         studentadapter.addFragment(new AcademicsPG(),"PG");
-        studentadapter.addFragment(new AcademicsLnmScholars(),"LNM Scholars");
+        studentadapter.addFragment(new AcademicsLnmScholars(),"Scholars");
         viewPager.setAdapter(studentadapter);
         tabLayout.setupWithViewPager(viewPager);
         return x;

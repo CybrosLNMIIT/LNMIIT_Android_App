@@ -1,5 +1,6 @@
 package lnmiit.android.app.activity;
 
+import android.app.ProgressDialog;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
@@ -20,19 +21,20 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
 import lnmiit.android.app.R;
+import lnmiit.android.app.tools.Tools;
 
 public class WebActivity extends AppCompatActivity {
 
     private WebView webview ;
-    private ProgressBar progressBar ;
     private String url ;
     private Menu menu;
-
+    private ProgressDialog pd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("LNMIIT");
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -43,7 +45,7 @@ public class WebActivity extends AppCompatActivity {
         url = intent.getStringExtra("url_news");
         System.out.println("Link " + url);
         webview = (WebView) findViewById(R.id.webView);
-        progressBar = (ProgressBar) findViewById(R.id.progressbarweb);
+        pd= Tools.getProgressDialog(WebActivity.this);
         webview.setWebViewClient(new MyBrowser());
 
         webview.getSettings().setLoadsImagesAutomatically(true);
@@ -98,13 +100,13 @@ public class WebActivity extends AppCompatActivity {
         @Override
         public void onPageStarted(WebView view, String url, Bitmap favicon) {
             super.onPageStarted(view, url, favicon);
-            progressBar.setVisibility(View.VISIBLE);
+            pd.show();;
         }
 
         @Override
         public void onPageFinished(WebView view, String url) {
             super.onPageFinished(view, url);
-            progressBar.setVisibility(View.GONE);
+            pd.hide();
         }
     }
     @Override

@@ -28,6 +28,7 @@ public class FacultyFragment extends Fragment {
     static {
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
     }
+
     private TabLayout tabLayout;
     private ViewPager viewPager;
 
@@ -38,13 +39,13 @@ public class FacultyFragment extends Fragment {
         viewPager = (ViewPager) view.findViewById(R.id.viewpager1);
         setupViewPager(viewPager);
 
-        tabLayout = ((MainActivity)getActivity()).getTabLayout();
+        tabLayout = ((MainActivity) getActivity()).getTabLayout();
         tabLayout.removeAllTabs();
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
-
-        return view ;
+        return view;
     }
+
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getActivity().getSupportFragmentManager());
         adapter.addFrag(new CSEFacultyFragment(), "CSE");
