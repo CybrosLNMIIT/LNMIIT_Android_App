@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">LNMIIT</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="cse_faculty_url">
+        <item>http://lnmiit.ac.in/ImageGenerator.aspx?imgID=20231&amp;command=profile_pic&amp;w=100&amp;h=100</item>
+        <item>http://lnmiit.ac.in/ImageGenerator.aspx?imgID=70&amp;command=profile_pic&amp;w=100&amp;h=100</item>
+        <item>http://lnmiit.ac.in/ImageGenerator.aspx?imgID=212&amp;command=profile_pic&amp;w=100&amp;h=100</item>
+        <item>http://lnmiit.ac.in/images/system/noprofile.jpg</item>
+        <item>http://lnmiit.ac.in/ImageGenerator.aspx?imgID=151&amp;command=profile_pic&amp;w=100&amp;h=100</item>
+        <item>http://lnmiit.ac.in/ImageGenerator.aspx?imgID=133&amp;command=profile_pic&amp;w=100&amp;h=100</item>
+        <item>http://lnmiit.ac.in/ImageGenerator.aspx?imgID=56&amp;command=profile_pic&amp;w=100&amp;h=100</item>
+        <item>http://lnmiit.ac.in/ImageGenerator.aspx?imgID=54&amp;command=profile_pic&amp;w=100&amp;h=100</item>
+        <item>http://lnmiit.ac.in/ImageGenerator.aspx?imgID=140&amp;command=profile_pic&amp;w=100&amp;h=100</item>
+        <item>http://lnmiit.ac.in/ImageGenerator.aspx?imgID=73&amp;command=profile_pic&amp;w=100&amp;h=100</item>
+        <item>http://lnmiit.ac.in/ImageGenerator.aspx?imgID=145&amp;command=profile_pic&amp;w=100&amp;h=100</item>
+        <item>http://lnmiit.ac.in/ImageGenerator.aspx?imgID=50&amp;command=profile_pic&amp;w=100&amp;h=100</item>
+        <item>http://lnmiit.ac.in/ImageGenerator.aspx?imgID=75&amp;command=profile_pic&amp;w=100&amp;h=100</item>
+        <item>http://lnmiit.ac.in/ImageGenerator.aspx?imgID=78&amp;command=profile_pic&amp;w=100&amp;h=100</item>
+    </string-array>
+
+    <string-array name="cse_faculty_name">
+        <item>Prof. Narasimha Bolloju</item>
+        <item>Prof. Ravi Prakash Gorthi</item>
+        <item>Dr. Sakthi Balan Muthiah</item>
+        <item>Dr. Subrat Kumar Dash</item>
+        <item>Dr. Bharavi Mishra</item>
+        <item>Dr. Poonam Gera</item>
+        <item>Dr. Preety Singh</item>
+        <item>Dr. Rajbir Kaur</item>
+        <item>Dr. Vibhor Kant</item>
+        <item>Mr. Dinesh Khandelwal</item>
+        <item>Mr. Sunil Kumar</item>
+        <item>Mr. Vikas Bajpai</item>
+        <item>Ms. Sonam Nahar</item>
+        <item>Mr. Mukesh K Jadon</item>
+
+    </string-array>
+
+    <string-array name="cse_faculty_designation">
+        <item>Professor</item>
+        <item>Professor</item>
+        <item>Associate Professor</item>
+        <item>Associate Professor</item>
+        <item>Assistant Professor</item>
+        <item>Assistant Professor</item>
+        <item>Assistant Professor</item>
+        <item>Assistant Professor</item>
+        <item>Assistant Professor</item>
+        <item>Assistant Professor</item>
+        <item>Assistant Professor</item>
+        <item>Assistant Professor</item>
+        <item>Assistant Professor</item>
+        <item>Lecturer</item>
+    </string-array>
+
+    <string-array name="cse_faculty_email">
+        <item>narsi.bolloju@lnmiit.ac.in</item>
+        <item>rgorthi@lnmiit.ac.in</item>
+        <item>sakthi.balan@lnmiit.ac.in</item>
+        <item>subrat@lnmiit.ac.in</item>
+        <item>bharavi@lnmiit.ac.in</item>
+        <item>poonamgera.21@gmail.com</item>
+        <item>prtysingh@gmail.com</item>
+        <item>catchrajbirkaur@gmail.com</item>
+        <item>vibhor.kant@lnmiit.ac.in</item>
+        <item>dineshk@lnmiit.ac.in</item>
+        <item>sunil@lnmiit.ac.in</item>
+        <item>vikas.bajpai87@gmail.com</item>
+        <item>sonamnahar@gmail.com</item>
+        <item>jadonmukesh30@gmail.com</item>
+    </string-array>
+
+    <string-array name="cse_faculty_contact">
+        <item> </item>
+        <item>+917597167508</item>
+        <item>+919739979480</item>
+        <item>+919413825982</item>
+        <item>+917727017662</item>
+        <item>+918764395180</item>
+        <item>+919828364396</item>
+        <item>+919829688889</item>
+        <item> </item>
+        <item>+918764038699</item>
+        <item> </item>
+        <item>+918875522828</item>
+        <item>+919530176476</item>
+        <item> </item>
+    </string-array>
+
+
+
+</resources>
