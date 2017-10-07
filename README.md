@@ -10,7 +10,7 @@ This version will contains:
 - Adding navigaton Drawer for easier access of various features of application.
 - High quality code with better code coverage and scalability.
 
-##Mentors: 
-- **[Vishwajeet Srivastava] (https://github.com/vjs3)**
-- **Aditya Jain**
+## Mentors: 
+- [**Vishwajeet Srivastava**](https://github.com/vjs3)
+- [**Aditya Jain**](https://github.com/jainadit27)
 
