@@ -10,9 +10,8 @@ import android.widget.ImageView;
 
 import lnmiit.android.app.R;
 
-/* Created by Kanishk
-   on 9th October
- */
+/* Created on 9th October 2017 */
+
 public class SplashActivity extends AppCompatActivity {
 
     ImageView splashImage;
