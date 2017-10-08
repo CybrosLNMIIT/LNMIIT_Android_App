@@ -4,13 +4,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+
 import lnmiit.android.app.R;
-/* Created by Chanpreet
-   on 11 August 2016
+
+/* Created by Kanishk
+   on 9th October
  */
 public class SplashActivity extends AppCompatActivity {
 
-      private Thread splash;
+    ImageView splashImage;
+    Animation anim;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,19 +26,26 @@ public class SplashActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        splash = new Thread() {
+        splashImage = (ImageView)findViewById(R.id.splash_screen_image);
+        anim = AnimationUtils.loadAnimation(this, R.anim.splash_screen_transition);
+        splashImage.setAnimation(anim);
+
+        Thread splash = new Thread() {
             public void run() {
                 try {
                     sleep(3000);
-                } catch (Exception e) {
+                }
+                catch(InterruptedException e) {
                     e.printStackTrace();
-                } finally {   // Launching the main Activity
-                    Intent mainIntent = new Intent("lnmiit.android.app.main");
-                    startActivity(mainIntent);
+                }
+                finally {
+                    Intent intent = new Intent("lnmiit.android.app.main");
+                    startActivity(intent);
                     finish();
                 }
             }
-        };
-        splash.start();
+
+        };splash.start();
+
     }
 }

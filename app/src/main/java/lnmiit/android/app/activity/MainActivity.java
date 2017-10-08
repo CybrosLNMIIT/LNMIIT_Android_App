@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.administration) {
             fragment = new AdministrationFragment();
-            lockAppBar(false,"Administartion");
+            lockAppBar(false,"Administration");
             Glide.with(this).load(R.drawable.admin).into(imageView);
         } else if (id == R.id.faculty) {
             fragment = new FacultyFragment();
