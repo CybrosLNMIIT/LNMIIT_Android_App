@@ -5,10 +5,12 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import lnmiit.android.app.R;
 
@@ -30,8 +32,10 @@ public class SplashActivity extends AppCompatActivity {
         splashImage = (ImageView)findViewById(R.id.splash_screen_image);
         progressBar = (ProgressBar)findViewById(R.id.splash_progress_bar);
         anim = AnimationUtils.loadAnimation(this, R.anim.splash_screen_transition);
-        splashImage.setAnimation(anim);
-        progressBar.setAnimation(anim);
+        //splashImage.setAnimation(anim);
+        progressBar.setVisibility(View.INVISIBLE);
+        //progressBar.setAnimation(anim);
+        Toast.makeText(this,"Loading...",Toast.LENGTH_SHORT).show();
 
         i=0;
         final Handler handler = new Handler();
@@ -39,7 +43,12 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
 
                 if (i++ < 5) {
-                    progressBar.setProgress(i*20);
+                    if(i%2 != 0) {
+                        splashImage.animate().alpha(1.0f).setDuration(600);
+                    } else {
+                        splashImage.animate().alpha(0.0f).setDuration(600);
+                    }
+                    //progressBar.setProgress(i*20);
                     handler.postDelayed(this, 600);
                 }
                 else {

@@ -6,13 +6,21 @@
                 android:layout_height="match_parent">
 
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"/>
+
     <ImageView
         android:id="@+id/splash_screen_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:padding="7dp"
-        app:srcCompat="@drawable/lnmiit_logo_transparent"/>
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/app_logo"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
 
     <ProgressBar
         android:id="@+id/splash_progress_bar"
@@ -25,5 +33,13 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="15dp"
         android:progressTint="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"/>
 
 </RelativeLayout>
