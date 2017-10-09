@@ -2,11 +2,13 @@ package lnmiit.android.app.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 
 import lnmiit.android.app.R;
 
@@ -14,6 +16,8 @@ public class SplashActivity extends AppCompatActivity {
 
     ImageView splashImage;
     Animation anim;
+    ProgressBar progressBar;
+    int i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,25 +28,28 @@ public class SplashActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         splashImage = (ImageView)findViewById(R.id.splash_screen_image);
+        progressBar = (ProgressBar)findViewById(R.id.splash_progress_bar);
         anim = AnimationUtils.loadAnimation(this, R.anim.splash_screen_transition);
         splashImage.setAnimation(anim);
+        progressBar.setAnimation(anim);
 
-        Thread splash = new Thread() {
+        i=0;
+        final Handler handler = new Handler();
+        final Runnable runnable = new Runnable() {
             public void run() {
-                try {
-                    sleep(3000);
+
+                if (i++ < 5) {
+                    progressBar.setProgress(i*20);
+                    handler.postDelayed(this, 600);
                 }
-                catch(InterruptedException e) {
-                    e.printStackTrace();
-                }
-                finally {
+                else {
                     Intent intent = new Intent("lnmiit.android.app.main");
                     startActivity(intent);
                     finish();
                 }
             }
-
-        };splash.start();
+        };
+        handler.post(runnable);
 
     }
 }
