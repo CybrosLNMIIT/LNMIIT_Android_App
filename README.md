@@ -12,6 +12,6 @@ This version will contains:
 
 ## Mentors:
  
-- **[Vishwajeet Srivastava](https://github.com/vjs3)
-- **[Aditya Jain](https://github.com/jainadit27)
+- [Vishwajeet Srivastava](https://github.com/vjs3)
+- [Aditya Jain](https://github.com/jainadit27)
 
