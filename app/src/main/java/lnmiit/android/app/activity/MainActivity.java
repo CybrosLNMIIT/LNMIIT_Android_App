@@ -1,39 +1,16 @@
 package lnmiit.android.app.activity;
 
 import android.os.Bundle;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.NavigationView;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import android.support.*;
 import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
+import android.widget.*;
 
 import com.bumptech.glide.Glide;
 
 import lnmiit.android.app.R;
-import lnmiit.android.app.fragment.AboutUsFragment;
-import lnmiit.android.app.fragment.AcademicsFragment;
-import lnmiit.android.app.fragment.AdministrationFragment;
-import lnmiit.android.app.fragment.AdmissionsFragment;
-import lnmiit.android.app.fragment.EmergencyFragment;
-import lnmiit.android.app.fragment.FacultyFragment;
-import lnmiit.android.app.fragment.GalleryImageFragment;
-import lnmiit.android.app.fragment.HomeFragment;
-import lnmiit.android.app.fragment.MapFragment;
-import lnmiit.android.app.fragment.PlacementFragment;
-import lnmiit.android.app.fragment.StudentFragment;
+import lnmiit.android.app.fragment.*;
 
 /* Created by Chanpreet
    on 11 August 2016
@@ -86,7 +63,7 @@ public class MainActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            parent.onBackPressed();
         }
     }
 
